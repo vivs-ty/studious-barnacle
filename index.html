@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivesh Tyagi | Cloud & DevOps Engineer</title>
+  <meta name="description" content="Portfolio of Vivesh Tyagi — Sr. CloudOps Specialist, DevOps Engineer, SRE Enthusiast.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ───────── BOOT SCREEN ───────── -->
+  <div id="boot-screen" aria-hidden="true">
+    <div class="boot-inner">
+      <div class="boot-logo">VT</div>
+      <div class="boot-lines">
+        <p class="bl bl-0"><span class="ok">[  OK  ]</span> Loading kernel modules...</p>
+        <p class="bl bl-1"><span class="ok">[  OK  ]</span> Mounting cloud.sdk &amp; devops.toolkit</p>
+        <p class="bl bl-2"><span class="ok">[  OK  ]</span> Starting sre.framework service</p>
+        <p class="bl bl-3"><span class="ok">[  OK  ]</span> Establishing secure connection</p>
+        <p class="bl bl-4 done">VIVESH_OS v2.0 — All systems operational. Welcome.</p>
+      </div>
+      <div class="boot-bar-wrap"><div class="boot-bar"></div></div>
+    </div>
+  </div>
+
+  <!-- ───────── CUSTOM CURSOR ───────── -->
+  <div id="cur-dot"  aria-hidden="true"></div>
+  <div id="cur-ring" aria-hidden="true"></div>
+
+  <!-- ───────── CIRCUIT CANVAS ───────── -->
+  <canvas id="circuit-canvas" aria-hidden="true"></canvas>
+
+  <!-- ───────── SIDEBAR NAVIGATION ───────── -->
+  <aside id="sidebar">
+    <div class="sb-logo">
+      <div class="hex-badge">VT</div>
+      <span>Vivesh</span>
+    </div>
+
+    <nav class="sb-nav" aria-label="Main navigation">
+      <a href="#home"           class="nav-item active" data-sec="home">
+        <i class="fas fa-terminal"></i><span>Home</span></a>
+      <a href="#about"          class="nav-item" data-sec="about">
+        <i class="fas fa-id-card"></i><span>About</span></a>
+      <a href="#experience"     class="nav-item" data-sec="experience">
+        <i class="fas fa-briefcase"></i><span>Experience</span></a>
+      <a href="#skills"         class="nav-item" data-sec="skills">
+        <i class="fas fa-microchip"></i><span>Skills</span></a>
+      <a href="#projects"       class="nav-item" data-sec="projects">
+        <i class="fas fa-rocket"></i><span>Projects</span></a>
+      <a href="#certifications" class="nav-item" data-sec="certifications">
+        <i class="fas fa-award"></i><span>Certs</span></a>
+      <a href="#ideas"          class="nav-item" data-sec="ideas">
+        <i class="fas fa-lightbulb"></i><span>Ideas</span></a>
+      <a href="#contact"        class="nav-item" data-sec="contact">
+        <i class="fas fa-satellite-dish"></i><span>Connect</span></a>
+    </nav>
+
+    <div class="sb-social">
+      <a href="https://github.com/vivs-ty"                                    target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://in.linkedin.com/in/vivesh-tyagi-9085a9a9"              target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:viveshtyagi.work@gmail.com"                             aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <button id="sb-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+  </aside>
+
+  <!-- ───────── MAIN CONTENT ───────── -->
+  <main id="main">
+
+    <!-- ── HERO ── -->
+    <section id="home" class="section hero-section">
+      <div class="hero-layout">
+
+        <div class="hero-left">
+          <div class="terminal-header">
+            <span class="th-user">vivesh@ops-center</span><span class="th-sep">:</span><span class="th-path">~/portfolio</span><span class="th-dollar">$&nbsp;</span><span id="hero-typing"></span><span class="th-cursor">▋</span>
+          </div>
+          <h1 class="hero-name">Vivesh <span class="c-cyan">Tyagi</span></h1>
+          <div class="hero-roles">
+            <span class="role-chip">☁️ Cloud Engineer</span>
+            <span class="role-chip">⚙️ DevOps Practitioner</span>
+            <span class="role-chip">🛡️ SRE Enthusiast</span>
+          </div>
+          <p class="hero-tagline">Building resilient cloud infrastructure,<br>automating the boring stuff, one pipeline at a time.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> Explore Projects</a>
+            <a href="#contact"  class="btn btn-ghost"><i class="fas fa-satellite-dish"></i> Connect</a>
+            <a href="https://vivs-ty.github.io/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fas fa-file-alt"></i> Resume</a>
+          </div>
+          <div class="hero-stats">
+            <div class="h-stat"><span class="h-num" data-target="6">0</span><sup>+</sup><span>Years Exp</span></div>
+            <div class="h-stat"><span class="h-num" data-target="10">0</span><sup>+</sup><span>Projects</span></div>
+            <div class="h-stat"><span class="h-num" data-target="12">0</span><sup>+</sup><span>Badges</span></div>
+            <div class="h-stat"><span class="h-num" data-target="3">0</span><sup>+</sup><span>Clouds</span></div>
+          </div>
+        </div>
+
+        <div class="hero-right" aria-hidden="true">
+          <div class="orbit-system">
+            <div class="o-ring r1"></div>
+            <div class="o-ring r2"></div>
+            <div class="o-ring r3"></div>
+            <div class="o-center">VT</div>
+            <div class="o-icon oi-1"><i class="fab fa-aws"         title="AWS"></i></div>
+            <div class="o-icon oi-2"><i class="fab fa-google"      title="GCP"></i></div>
+            <div class="o-icon oi-3"><i class="fas fa-dharmachakra" title="Kubernetes"></i></div>
+            <div class="o-icon oi-4"><i class="fas fa-code-branch" title="Terraform"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>scroll to explore</span>
+        <div class="s-arrow"></div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section reveal">
+      <div class="sec-header">
+        <span class="sec-tag">// 01</span>
+        <h2>Personnel <span class="c-cyan">File</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card panel">
+          <div class="per-head">
+            <div class="per-avatar">VT</div>
+            <div class="per-meta">
+              <h3>Vivesh Tyagi</h3>
+              <span class="per-role">Sr. CloudOps Specialist</span>
+              <span class="status-pill"><span class="s-dot"></span>Open to Opportunities</span>
+            </div>
+          </div>
+          <div class="per-rows">
+            <div class="per-row"><i class="fas fa-building"></i><span>UKG (Ultimate Kronos Group)</span></div>
+            <div class="per-row"><i class="fas fa-map-marker-alt"></i><span>India</span></div>
+            <div class="per-row"><i class="fas fa-envelope"></i><span>viveshtyagi.work@gmail.com</span></div>
+          </div>
+        </div>
+
+        <div class="bio-card panel">
+          <p class="panel-label">// BRIEFING</p>
+          <p>Passionate about automating cloud infrastructure with hands-on experience in <strong>AWS</strong>, <strong>GCP</strong>, DevOps tooling, and open-source. I specialize in building resilient, scalable infrastructure pipelines — from provisioning with <strong>Terraform</strong> to orchestrating with <strong>Ansible</strong>, and everything in between.</p>
+          <p>When not in the cloud, I enjoy solving puzzles 🧩 and experimenting with new recipes 🍲</p>
+          <div class="bio-highlights">
+            <div class="bh"><i class="fas fa-check-circle"></i> Infrastructure as Code (IaC)</div>
+            <div class="bh"><i class="fas fa-check-circle"></i> CI/CD Pipeline Design</div>
+            <div class="bh"><i class="fas fa-check-circle"></i> Cloud Cost Optimization</div>
+            <div class="bh"><i class="fas fa-check-circle"></i> Multicloud Networking</div>
+            <div class="bh"><i class="fas fa-check-circle"></i> Site Reliability Engineering</div>
+            <div class="bh"><i class="fas fa-check-circle"></i> Observability &amp; Monitoring</div>
+          </div>
+          <a href="https://vivs-ty.github.io/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section id="experience" class="section reveal">
+      <div class="sec-header">
+        <span class="sec-tag">// 02</span>
+        <h2>Deployment <span class="c-purple">History</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-marker"><div class="tl-node pulse"></div></div>
+          <div class="tl-card panel">
+            <div class="tl-top">
+              <span class="tl-period">2021 — Present</span>
+              <span class="tl-status active">● Active</span>
+            </div>
+            <h3>Sr. CloudOps Specialist</h3>
+            <p class="tl-company"><i class="fas fa-building"></i> UKG (Ultimate Kronos Group)</p>
+            <p class="tl-desc">Leading cloud infrastructure operations and automation. Managing multi-cloud environments across AWS and GCP. Implementing IaC best practices with Terraform and Ansible. Driving CI/CD pipeline improvements and observability enhancements.</p>
+            <div class="tl-tags">
+              <span>AWS</span><span>GCP</span><span>Terraform</span><span>Ansible</span><span>Kubernetes</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><div class="tl-node"></div></div>
+          <div class="tl-card panel">
+            <div class="tl-top">
+              <span class="tl-period">2019 — 2021</span>
+              <span class="tl-status done">◉ Completed</span>
+            </div>
+            <h3>Cloud Infrastructure Engineer</h3>
+            <p class="tl-company"><i class="fas fa-building"></i> Previous Employer</p>
+            <p class="tl-desc">Managed AWS cloud infrastructure, automated deployments, and supported DevOps transformation initiatives. Implemented monitoring solutions and optimized cloud cost across multiple accounts.</p>
+            <div class="tl-tags">
+              <span>AWS</span><span>Docker</span><span>Shell</span><span>Python</span><span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"><div class="tl-node"></div></div>
+          <div class="tl-card panel">
+            <div class="tl-top">
+              <span class="tl-period">2017 — 2019</span>
+              <span class="tl-status done">◉ Completed</span>
+            </div>
+            <h3>Systems Engineer</h3>
+            <p class="tl-company"><i class="fas fa-building"></i> Early Career</p>
+            <p class="tl-desc">Administered Linux servers, automated operational tasks using Bash scripting, and supported infrastructure monitoring and maintenance.</p>
+            <div class="tl-tags">
+              <span>Linux</span><span>Bash</span><span>Networking</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section reveal">
+      <div class="sec-header">
+        <span class="sec-tag">// 03</span>
+        <h2>Tech <span class="c-rose">Arsenal</span></h2>
+      </div>
+
+      <div class="skill-tabs" role="tablist">
+        <button class="s-tab active" data-cat="cloud"      role="tab" aria-selected="true">☁️ Cloud</button>
+        <button class="s-tab"        data-cat="devops"     role="tab">⚙️ DevOps</button>
+        <button class="s-tab"        data-cat="containers" role="tab">🐳 Containers</button>
+        <button class="s-tab"        data-cat="scripting"  role="tab">💻 Scripting</button>
+        <button class="s-tab"        data-cat="monitoring" role="tab">📊 Observability</button>
+      </div>
+
+      <div class="skill-panels">
+        <div class="skill-panel active" data-cat="cloud" role="tabpanel">
+          <div class="hex-grid">
+            <div class="hex-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+            <div class="hex-item"><i class="fab fa-google"></i><span>GCP</span></div>
+            <div class="hex-item"><i class="fas fa-cloud"></i><span>Cloud Networking</span></div>
+            <div class="hex-item"><i class="fas fa-server"></i><span>EC2 / GCE</span></div>
+            <div class="hex-item"><i class="fas fa-database"></i><span>RDS / Cloud SQL</span></div>
+            <div class="hex-item"><i class="fas fa-lock"></i><span>IAM / Security</span></div>
+            <div class="hex-item"><i class="fas fa-network-wired"></i><span>VPC / VPN</span></div>
+            <div class="hex-item"><i class="fas fa-project-diagram"></i><span>Aviatrix</span></div>
+          </div>
+        </div>
+        <div class="skill-panel" data-cat="devops" role="tabpanel">
+          <div class="hex-grid">
+            <div class="hex-item"><i class="fas fa-code-branch"></i><span>Terraform</span></div>
+            <div class="hex-item"><i class="fas fa-gear"></i><span>Ansible</span></div>
+            <div class="hex-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+            <div class="hex-item"><i class="fas fa-infinity"></i><span>CI/CD</span></div>
+            <div class="hex-item"><i class="fab fa-jenkins"></i><span>Jenkins</span></div>
+            <div class="hex-item"><i class="fab fa-github"></i><span>GitHub Actions</span></div>
+            <div class="hex-item"><i class="fas fa-code"></i><span>GitOps</span></div>
+          </div>
+        </div>
+        <div class="skill-panel" data-cat="containers" role="tabpanel">
+          <div class="hex-grid">
+            <div class="hex-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+            <div class="hex-item"><i class="fas fa-dharmachakra"></i><span>Kubernetes</span></div>
+            <div class="hex-item"><i class="fas fa-layer-group"></i><span>Helm</span></div>
+            <div class="hex-item"><i class="fas fa-cube"></i><span>Container Registry</span></div>
+            <div class="hex-item"><i class="fas fa-ship"></i><span>Podman</span></div>
+          </div>
+        </div>
+        <div class="skill-panel" data-cat="scripting" role="tabpanel">
+          <div class="hex-grid">
+            <div class="hex-item"><i class="fas fa-terminal"></i><span>Bash / Shell</span></div>
+            <div class="hex-item"><i class="fab fa-python"></i><span>Python</span></div>
+            <div class="hex-item"><i class="fas fa-file-code"></i><span>YAML</span></div>
+            <div class="hex-item"><i class="fas fa-code"></i><span>HCL / JSON</span></div>
+            <div class="hex-item"><i class="fab fa-linux"></i><span>Linux</span></div>
+          </div>
+        </div>
+        <div class="skill-panel" data-cat="monitoring" role="tabpanel">
+          <div class="hex-grid">
+            <div class="hex-item"><i class="fas fa-chart-line"></i><span>Prometheus</span></div>
+            <div class="hex-item"><i class="fas fa-fire"></i><span>Grafana</span></div>
+            <div class="hex-item"><i class="fas fa-search"></i><span>ELK Stack</span></div>
+            <div class="hex-item"><i class="fas fa-bell"></i><span>CloudWatch</span></div>
+            <div class="hex-item"><i class="fas fa-eye"></i><span>Datadog</span></div>
+            <div class="hex-item"><i class="fas fa-spider"></i><span>Jaeger / Tracing</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="section reveal">
+      <div class="sec-header">
+        <span class="sec-tag">// 04</span>
+        <h2>Active <span class="c-cyan">Missions</span></h2>
+      </div>
+
+      <div class="proj-filters" role="toolbar" aria-label="Project filters">
+        <button class="pf active" data-filter="all">All</button>
+        <button class="pf" data-filter="aws">AWS</button>
+        <button class="pf" data-filter="gcp">GCP</button>
+        <button class="pf" data-filter="devops">DevOps</button>
+        <button class="pf" data-filter="python">Python</button>
+        <button class="pf" data-filter="sre">SRE</button>
+      </div>
+
+      <div class="proj-grid">
+
+        <article class="proj-card tilt" data-tags="devops aws" tabindex="0">
+          <div class="pc-glow"></div>
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fab fa-aws"></i></div>
+            <span class="pc-badge wip">WIP</span>
+          </div>
+          <h3>AWS Infra Automation</h3>
+          <p>Provision and manage AWS infrastructure using Terraform &amp; Ansible with modular, reusable structure.</p>
+          <div class="pc-tech"><span>Terraform</span><span>Ansible</span><span>AWS</span></div>
+          <a href="https://github.com/vivs-ty" target="_blank" rel="noopener noreferrer" class="pc-link"><i class="fab fa-github"></i> View Code</a>
+        </article>
+
+        <article class="proj-card tilt" data-tags="gcp devops python" tabindex="0">
+          <div class="pc-glow"></div>
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fab fa-google"></i></div>
+            <span class="pc-badge active">Active</span>
+          </div>
+          <h3>Cloud Native App</h3>
+          <p>Modern FastAPI application containerised with Docker, orchestrated on GCP Kubernetes Engine.</p>
+          <div class="pc-tech"><span>FastAPI</span><span>Docker</span><span>GCP</span><span>K8s</span></div>
+          <a href="https://github.com/vivs-ty/cloud-native-app" target="_blank" rel="noopener noreferrer" class="pc-link"><i class="fab fa-github"></i> View Code</a>
+        </article>
+
+        <article class="proj-card tilt" data-tags="devops aws" tabindex="0">
+          <div class="pc-glow"></div>
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-layer-group"></i></div>
+            <span class="pc-badge active">Active</span>
+          </div>
+          <h3>Cloud Infrastructure (IaC)</h3>
+          <p>Modular Terraform project for provisioning cloud infrastructure following best practices and reuse patterns.</p>
+          <div class="pc-tech"><span>Terraform</span><span>Shell</span><span>AWS</span></div>
+          <a href="https://github.com/vivs-ty/cloud-infra" target="_blank" rel="noopener noreferrer" class="pc-link"><i class="fab fa-github"></i> View Code</a>
+        </article>
+
+        <article class="proj-card tilt" data-tags="python devops" tabindex="0">
+          <div class="pc-glow"></div>
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-dharmachakra"></i></div>
+            <span class="pc-badge active">Active</span>
+          </div>
+          <h3>K8s Leader Election</h3>
+          <p>Python implementation of Kubernetes leader election pattern for master &amp; worker node coordination.</p>
+          <div class="pc-tech"><span>Python</span><span>Kubernetes</span></div>
+          <a href="https://github.com/vivs-ty/k8s-python-leader-election" target="_blank" rel="noopener noreferrer" class="pc-link"><i class="fab fa-github"></i> View Code</a>
+        </article>
+
+        <article class="proj-card tilt" data-tags="sre devops" tabindex="0">
+          <div class="pc-glow"></div>
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fas fa-shield-alt"></i></div>
+            <span class="pc-badge active">Active</span>
+          </div>
+          <h3>Reliability Forge</h3>
+          <p>Hands-on SRE &amp; Cloud Engineering lab — automation, observability, resilience, real-world reliability patterns.</p>
+          <div class="pc-tech"><span>SRE</span><span>Observability</span><span>Cloud</span></div>
+          <a href="https://github.com/vivs-ty/Reliability-Forge" target="_blank" rel="noopener noreferrer" class="pc-link"><i class="fab fa-github"></i> View Code</a>
+        </article>
+
+        <article class="proj-card tilt" data-tags="python" tabindex="0">
+          <div class="pc-glow"></div>
+          <div class="pc-top">
+            <div class="pc-icon"><i class="fab fa-python"></i></div>
+            <span class="pc-badge done">Done</span>
+          </div>
+          <h3>Flask Project Showcase</h3>
+          <p>Modern Flask web app for showcasing projects with community collaboration features.</p>
+          <div class="pc-tech"><span>Python</span><span>Flask</span><span>HTML/CSS</span></div>
+          <a href="https://github.com/vivs-ty/flask-project-showcase" target="_blank" rel="noopener noreferrer" class="pc-link"><i class="fab fa-github"></i> View Code</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ── -->
+    <section id="certifications" class="section reveal">
+      <div class="sec-header">
+        <span class="sec-tag">// 05</span>
+        <h2>Certified <span class="c-purple">Assets</span></h2>
+        <p class="sec-sub">Verified credentials on <a href="https://www.credly.com/users/vivesh-tyagi/badges" target="_blank" rel="noopener noreferrer">Credly ↗</a></p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="38d12f01-bd5a-4abf-ab3d-ad649355bc2d" data-share-badge-host="https://www.credly.com"></div><p>HashiCorp Certified: Terraform Associate (003)</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="65b6735b-ea5d-4d19-a5ec-954307bcd2d7" data-share-badge-host="https://www.credly.com"></div><p>Aviatrix Multicloud Network Associate</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="a52cefe0-890d-4fb1-9dd7-12981c0456b3" data-share-badge-host="https://www.credly.com"></div><p>Aviatrix Multicloud Network Automation</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="7573f553-335e-4197-b5a5-7c5dcae6c413" data-share-badge-host="https://www.credly.com"></div><p>Aviatrix Multicloud Network Operations</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0fffda53-89fb-4017-b801-2a2f5c0d41a3" data-share-badge-host="https://www.credly.com"></div><p>Build Infrastructure with Terraform on GCP</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="42d74bb8-5b87-4ec0-93dd-a5604492e223" data-share-badge-host="https://www.credly.com"></div><p>Set Up an App Dev Environment on GCP</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="544586e2-2bb8-4e55-be68-dddbc3c5879f" data-share-badge-host="https://www.credly.com"></div><p>Monitor &amp; Log with Google Cloud Operations Suite</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="72d6671b-06c1-40ea-9725-5a2c1e712797" data-share-badge-host="https://www.credly.com"></div><p>Implement DevOps Workflows in Google Cloud</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="b9c00b85-3187-4a44-8388-03fdd3d5d7e8" data-share-badge-host="https://www.credly.com"></div><p>Set Up a Google Cloud Network</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ea3268a7-0905-4c77-a198-faea13792b02" data-share-badge-host="https://www.credly.com"></div><p>Deploy Kubernetes Apps on Google Cloud</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="bf63b4ae-053e-49cc-91f6-62f2d8dd1b1f" data-share-badge-host="https://www.credly.com"></div><p>Build a Website on Google Cloud</p></div>
+        <div class="cert-card"><div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="41d9a880-e415-4b45-a0e4-9e936b6388c8" data-share-badge-host="https://www.credly.com"></div><p>Develop Serverless Apps with Firebase</p></div>
+      </div>
+      <script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
+    </section>
+
+    <!-- ── IDEAS ── -->
+    <section id="ideas" class="section reveal">
+      <div class="sec-header">
+        <span class="sec-tag">// 06</span>
+        <h2>Transmission <span class="c-rose">Log</span></h2>
+        <p class="sec-sub">Ideas, experiments &amp; future missions</p>
+      </div>
+
+      <div class="ideas-grid">
+
+        <div class="idea-card panel">
+          <div class="idea-top">
+            <span class="idea-tag devops">DevOps</span>
+            <span class="idea-status in-progress">In Progress</span>
+          </div>
+          <h3>Multi-Cloud Cost Optimizer</h3>
+          <p>Open-source tool to analyse and optimise spending across AWS and GCP — with recommendations and auto-remediation.</p>
+          <span class="idea-date"><i class="fas fa-calendar-alt"></i> Q1 2025</span>
+        </div>
+
+        <div class="idea-card panel">
+          <div class="idea-top">
+            <span class="idea-tag sre">SRE</span>
+            <span class="idea-status planning">Planning</span>
+          </div>
+          <h3>Chaos Engineering Framework</h3>
+          <p>Lightweight chaos toolkit for cloud-native apps to test resilience and improve fault tolerance.</p>
+          <span class="idea-date"><i class="fas fa-calendar-alt"></i> Q2 2025</span>
+        </div>
+
+        <div class="idea-card panel">
+          <div class="idea-top">
+            <span class="idea-tag ai">AI / ML</span>
+            <span class="idea-status idea">Idea</span>
+          </div>
+          <h3>AI-Powered Runbook Generator</h3>
+          <p>Use LLMs to auto-generate incident runbooks &amp; playbooks from historical incident data and monitoring alerts.</p>
+          <span class="idea-date"><i class="fas fa-calendar-alt"></i> Q3 2025</span>
+        </div>
+
+        <div class="idea-card panel">
+          <div class="idea-top">
+            <span class="idea-tag cloud">Cloud</span>
+            <span class="idea-status planning">Planning</span>
+          </div>
+          <h3>Serverless GitOps Pipeline</h3>
+          <p>Fully serverless GitOps pipeline using Lambda / Cloud Functions for zero-infrastructure CI/CD delivery.</p>
+          <span class="idea-date"><i class="fas fa-calendar-alt"></i> Q4 2025</span>
+        </div>
+
+        <div class="idea-card panel">
+          <div class="idea-top">
+            <span class="idea-tag oss">Open Source</span>
+            <span class="idea-status idea">Idea</span>
+          </div>
+          <h3>Terraform Module Registry</h3>
+          <p>Curated collection of battle-tested Terraform modules for common cloud infrastructure patterns.</p>
+          <span class="idea-date"><i class="fas fa-calendar-alt"></i> 2026</span>
+        </div>
+
+        <div class="idea-card panel">
+          <div class="idea-top">
+            <span class="idea-tag learning">Learning</span>
+            <span class="idea-status in-progress">In Progress</span>
+          </div>
+          <h3>eBPF Cloud Observability</h3>
+          <p>Exploring eBPF for advanced observability and security monitoring in cloud-native apps — no code instrumentation.</p>
+          <span class="idea-date"><i class="fas fa-calendar-alt"></i> Ongoing</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section reveal">
+      <div class="sec-header">
+        <span class="sec-tag">// 07</span>
+        <h2>Establish <span class="c-cyan">Connection</span></h2>
+        <p class="sec-sub">Open to collaborations, opportunities &amp; good conversations</p>
+      </div>
+
+      <div class="contact-grid">
+        <a href="https://github.com/vivs-ty" target="_blank" rel="noopener noreferrer" class="contact-card panel gh">
+          <div class="cc-icon"><i class="fab fa-github"></i></div>
+          <h3>GitHub</h3>
+          <p>Explore repositories, contributions, and open-source work.</p>
+          <span class="cc-handle">@vivs-ty <i class="fas fa-external-link-alt"></i></span>
+        </a>
+
+        <a href="https://in.linkedin.com/in/vivesh-tyagi-9085a9a9" target="_blank" rel="noopener noreferrer" class="contact-card panel li">
+          <div class="cc-icon"><i class="fab fa-linkedin"></i></div>
+          <h3>LinkedIn</h3>
+          <p>Connect professionally. Let's build something great together.</p>
+          <span class="cc-handle">vivesh-tyagi <i class="fas fa-external-link-alt"></i></span>
+        </a>
+
+        <a href="mailto:viveshtyagi.work@gmail.com" class="contact-card panel em">
+          <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email</h3>
+          <p>Direct inquiries, collaborations, or just to say hello.</p>
+          <span class="cc-handle">viveshtyagi.work@gmail.com <i class="fas fa-paper-plane"></i></span>
+        </a>
+
+        <a href="https://www.credly.com/users/vivesh-tyagi/badges" target="_blank" rel="noopener noreferrer" class="contact-card panel cr">
+          <div class="cc-icon"><i class="fas fa-award"></i></div>
+          <h3>Credly</h3>
+          <p>View verified certifications and earned digital badges.</p>
+          <span class="cc-handle">View Badges <i class="fas fa-external-link-alt"></i></span>
+        </a>
+      </div>
+
+      <div class="gh-stats panel">
+        <p class="panel-label">// GITHUB ACTIVITY</p>
+        <div class="gh-imgs">
+          <img src="https://github-readme-stats.vercel.app/api?username=vivs-ty&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117" alt="GitHub Stats" loading="lazy">
+          <img src="https://streak-stats.demolab.com/?user=vivs-ty&theme=tokyonight&hide_border=true&background=0d1117" alt="GitHub Streak" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <p><span class="c-cyan">Vivesh</span> Tyagi &nbsp;·&nbsp; Sr. CloudOps Specialist</p>
+        <p class="foot-copy">© 2025 &nbsp;·&nbsp; Built with <i class="fas fa-heart" style="color:#f43f5e" aria-hidden="true"></i> &amp; ☁️</p>
+        <div class="foot-social">
+          <a href="https://github.com/vivs-ty"                               target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://in.linkedin.com/in/vivesh-tyagi-9085a9a9"         target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.credly.com/users/vivesh-tyagi/badges"         target="_blank" rel="noopener noreferrer" aria-label="Credly"><i class="fas fa-award"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </main><!-- /#main -->
+
+  <!-- back-to-top -->
+  <button id="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
